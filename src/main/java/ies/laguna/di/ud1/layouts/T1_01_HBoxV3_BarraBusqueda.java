@@ -20,7 +20,8 @@ public class T1_01_HBoxV3_BarraBusqueda extends Application {
     public void start(Stage stage) throws Exception {
         // Creación de componentes
         Label lblTerminos = new Label("Términos de búsqueda: ");
-        TextField txtBusqueda = new TextField("Escribe aqui...");
+        TextField txtBusqueda = new TextField();
+        txtBusqueda.setPromptText("Escribe aquí...");
         Button btnBuscar = new Button("Buscar");
 
         // Configuración del HBox con espaciado interno de 10px entre componentes
@@ -28,7 +29,7 @@ public class T1_01_HBoxV3_BarraBusqueda extends Application {
         hBox.getChildren().addAll(lblTerminos, txtBusqueda, btnBuscar);
 
         // Padding de 15px en todos los bordes
-        hBox.setPadding(new Insets(15));
+        hBox.setPadding(new Insets(15,10,15,10));
 
         // Alineación centrada a la izquierda
         hBox.setAlignment(Pos.CENTER_LEFT);
