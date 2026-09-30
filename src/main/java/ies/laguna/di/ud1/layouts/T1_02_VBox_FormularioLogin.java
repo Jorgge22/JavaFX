@@ -20,7 +20,9 @@ public class T1_02_VBox_FormularioLogin extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        VBox vBox = new VBox(15);
+        VBox vBox = new VBox();
+
+        vBox.setSpacing(15);
         vBox.setAlignment(Pos.CENTER);
         vBox.setPadding(new Insets(25));
 
